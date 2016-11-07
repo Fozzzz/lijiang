@@ -1,5 +1,6 @@
 package lijiang.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ public class Page {
     private Boolean lastPage;
     private Boolean firstPage;
     //列表数据
-    private List<?> list;
+    private List<?> list=new ArrayList<Object>();
     private Integer nextPage;
     private Integer frontPage;
 
