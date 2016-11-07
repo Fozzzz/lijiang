@@ -9,7 +9,7 @@
         </id>
         <property name="u_name"/>
         <property name="u_password"/>
-       <many-to-one name="groups" cascade="save-update" foreign-key="g_id" column="u_groups"/>
+       <many-to-one name="groups" foreign-key="g_id" column="u_groups"/>
     </class>
     <class name="Groups">
         <id name="g_id">
