@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="lijiang.entity">
+    <class name="News">
+        <id name="n_id">
+            <generator class="native" />
+        </id>
+        <property name="n_type"/>
+        <property name="n_title"/>
+        <property name="n_content"/>
+        <property name="n_picture"/>
+        <property name="n_date"/>
+        <property name="n_author"/>
+    </class>
+</hibernate-mapping>

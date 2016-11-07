@@ -11,11 +11,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class TestDao {
-    @Autowired
-    private SessionFactory sessionFactory;
     public void add(){
-        Session session = sessionFactory.getCurrentSession();
-        Test test = new Test(null,"test");
-        session.save(test);
     }
 }
