@@ -137,16 +137,9 @@
                   <span><img src="../images/icon_01_22.jpg"/></span>
                   <div class="Lj-roll">
                   <ul>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费征收的法律政策依据</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费的收费标准</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费免征对象</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费征收方式</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费的管理使用原则</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">对偷逃规避古城维护费征收的行政处罚</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费征收工作综合整治行动</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">丽江古城维护费票据抽奖办法（试行）</a></li>
-                    <li><img src="../images/icon_01_23.png"/><a href="javascript:">关于对《丽江古城维护费票据抽奖办法< 试行>》有关问题的解释 </a></li>
+                      <c:forEach var="temp" items="${pageFee.list}">
+                          <li><img src="../images/icon_01_23.png"/><a href="javascript:">${temp.n_title}</a></li>
+                      </c:forEach>
                   </ul>
                   </div>
                </div>
@@ -164,10 +157,9 @@
                  <span><img src="../images/img_01_09.jpg"/></span>
                  <div class="Lj-trends">
                     <ul>
-                      <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-                      <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-                      <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
-                      <li><a href="javascript:">22:16 还有两个小时就要走了，已经数不清来了多少次，每一次的感已经数不</a></li>
+                        <c:forEach var="temp" items="${pageLove.list}">
+                            <li><a href="javascript:">${temp.n_title}</a></li>
+                        </c:forEach>
                     </ul>
                  </div>
                </div>
@@ -195,83 +187,45 @@
              <div class="Lj-Bar-List">
              
                 <ul>
-                   <li>
-                       <div class="Bar-flash">
-                           
-                           <!--显示大图 begin-->
-                           <div class="Bar-big"><a href="javascript:"><img id="bigImg" class="pic-img" width="176" height="127" src="../images/img_07_01.jpg"/></a></div>
-                           <!--显示大图 end-->
-                           
-                           <!--Bar-circle begin-->
-                           <div class="Bar-circle">
-                              <a class="clickL" href="javaScript:Scroll('Direction',1)"><img id="oBtn_Left" src="../images/icon_07_03.jpg"/></a>
-                               <div id="smallImg" class="picarea">
-                                  <div class="imgbox" id="smallSpace">
-                                     <a href="javascript:"><img src="../images/img_01_16.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_17.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_18.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_19.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_20.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_21.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_22.jpg" onclick="changeBigImg(this)"/></a>
-                                  </div>
-                               </div>
-                              <a class="clickR" href="javaScript:Scroll('Direction',-1)"><img id="oBtn_Right" src="../images/icon_07_02.jpg"/></a>
-                           </div>
-                           <!--Bar-circle end-->
-                           
-                       </div>
-                       
-                       <!--详情 begin-->
-                       <div class="Bar-Text">
-                          <h1 class="Bar-h1"><a href="javascript:">香辣牛蹄筋</a></h1>
-                          <span class="Bar-Txt">一路走来，我们一直努力让您的旅途多一点完美，多一点柔情一点完美，多一点柔情多一
-情点柔情一点完美，多一点柔一点完美，多一点柔情多一点柔情点柔情一点完美，多一点
-多一点柔情点柔情一点完美，多多一点柔情点柔情一点完美</span>
-                          <i class="Bar-Text-i">地址：丽江 束河古镇 七一街道</i>
-                          <i class="Bar-Text-i">电话：13880134567</i>
-                       </div>
-                       <!--详情 end-->
-                   </li>
+                    <c:forEach var="temp" items="${pageFood.list}">
+                        <li>
+                            <div class="Bar-flash">
 
-				   <li>
-                       <div class="Bar-flash">
-                           
-                           <!--显示大图 begin-->
-                           <div class="Bar-big"><a href="javascript:"><img id="bigImg" class="pic-img" width="176" height="127" src="../images/img_07_01.jpg"/></a></div>
-                           <!--显示大图 end-->
-                           
-                           <!--Bar-circle begin-->
-                           <div class="Bar-circle">
-                              <a class="clickL" href="javaScript:Scroll('Direction',1)"><img id="oBtn_Left" src="../images/icon_07_03.jpg"/></a>
-                               <div id="smallImg" class="picarea">
-                                  <div class="imgbox" id="smallSpace">
-                                     <a href="javascript:"><img src="../images/img_01_16.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_17.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_18.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_19.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_20.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_21.jpg" onclick="changeBigImg(this)"/></a>
-                                     <a href="javascript:"><img src="../images/img_01_22.jpg" onclick="changeBigImg(this)"/></a>
-                                  </div>
-                               </div>
-                              <a class="clickR" href="javaScript:Scroll('Direction',-1)"><img id="oBtn_Right" src="../images/icon_07_02.jpg"/></a>
-                           </div>
-                           <!--Bar-circle end-->
-                           
-                       </div>
-                       
-                       <!--详情 begin-->
-                       <div class="Bar-Text">
-                          <h1 class="Bar-h1"><a href="javascript:">香辣牛蹄筋</a></h1>
-                          <span class="Bar-Txt">一路走来，我们一直努力让您的旅途多一点完美，多一点柔情一点完美，多一点柔情多一
-情点柔情一点完美，多一点柔一点完美，多一点柔情多一点柔情点柔情一点完美，多一点
-多一点柔情点柔情一点完美，多多一点柔情点柔情一点完美</span>
-                          <i class="Bar-Text-i">地址：丽江 束河古镇 七一街道</i>
-                          <i class="Bar-Text-i">电话：13880134567</i>
-                       </div>
-                       <!--详情 end-->
-                   </li>
+                                <!--显示大图 begin-->
+                                <div class="Bar-big"><a href="javascript:"><img id="bigImg" class="pic-img" width="176" height="127" src="../images/img_07_01.jpg"/></a></div>
+                                <!--显示大图 end-->
+
+                                <!--Bar-circle begin-->
+                                <div class="Bar-circle">
+                                    <a class="clickL" href="javaScript:Scroll('Direction',1)"><img id="oBtn_Left" src="../images/icon_07_03.jpg"/></a>
+                                    <div id="smallImg" class="picarea">
+                                        <div class="imgbox" id="smallSpace">
+                                            <a href="javascript:"><img src="../images/img_01_16.jpg" onclick="changeBigImg(this)"/></a>
+                                            <a href="javascript:"><img src="../images/img_01_17.jpg" onclick="changeBigImg(this)"/></a>
+                                            <a href="javascript:"><img src="../images/img_01_18.jpg" onclick="changeBigImg(this)"/></a>
+                                            <a href="javascript:"><img src="../images/img_01_19.jpg" onclick="changeBigImg(this)"/></a>
+                                            <a href="javascript:"><img src="../images/img_01_20.jpg" onclick="changeBigImg(this)"/></a>
+                                            <a href="javascript:"><img src="../images/img_01_21.jpg" onclick="changeBigImg(this)"/></a>
+                                            <a href="javascript:"><img src="../images/img_01_22.jpg" onclick="changeBigImg(this)"/></a>
+                                        </div>
+                                    </div>
+                                    <a class="clickR" href="javaScript:Scroll('Direction',-1)"><img id="oBtn_Right" src="../images/icon_07_02.jpg"/></a>
+                                </div>
+                                <!--Bar-circle end-->
+
+                            </div>
+
+                            <!--详情 begin-->
+                            <div class="Bar-Text">
+                                <h1 class="Bar-h1"><a href="javascript:">${temp.n_title}</a></h1>
+                          <span class="Bar-Txt">${temp.n_content}</span>
+                                <i class="Bar-Text-i">地址：丽江 束河古镇 七一街道</i>
+                                <i class="Bar-Text-i">电话：13880134567</i>
+                            </div>
+                            <!--详情 end-->
+                        </li>
+                    </c:forEach>
+
                 </ul>
                 
                 <div class="Lj-news-page">共6条记录 1/1页<a href="javascript:">首页</a><a href="javascript:">上一页</a><a href="javascript:">下一页</a><a href="javascript:">尾页</a>第<select class="select"><option>1</option><option>2</option></select>页</div>
